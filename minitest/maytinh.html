@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+</head>
+<body>
+<h1><b>Calculator</b></h1>
+<input id="One" type="number" placeholder="Nhập vào số thứ nhất">
+<input id="Two" type="number" placeholder="Nhập vào số thứ hai">
+<br><br>
+<button id="Add" onclick="Add()">Cộng(+)</button>
+<button id="Brand" onclick="hieu()">Trừ(-)</button>
+<button id="Addd" onclick="nhan()">Nhân(X)</button>
+<button id="Brandd" onclick="chia()">Chia(/)</button>
+<h3><b>Result :</b></h3>
+<p id="Result">Đây là kết quả</p>
+</body>
+<script>
+  function Add(){
+    let One = document.getElementById('One').value;
+    let Two = document.getElementById('Two').value;
+    let Result = Number(One)+Number(Two);
+    document.getElementById('Result').innerHTML=Result;
+  }
+  function hieu(){
+    let One = document.getElementById('One').value;
+    let Two = document.getElementById('Two').value;
+    let Result = Number(One)-Number(Two);
+    document.getElementById('Result').innerHTML=Result;
+  }
+  function nhan(){
+    let One = document.getElementById('One').value;
+    let Two = document.getElementById('Two').value;
+    let Result = Number(One)*Number(Two);
+    document.getElementById('Result').innerHTML=Result;
+  }
+  function chia(){
+    let One = document.getElementById('One').value;
+    let Two = document.getElementById('Two').value;
+    let Result = Number(One)/Number(Two);
+    document.getElementById('Result').innerHTML=Result;
+  }
+</script>
+</html>
